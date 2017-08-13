@@ -42,13 +42,13 @@ Mustache 标签将会被替代为对应数据对象上 `msg` 属性的值。无�
 
 ### 特性
 
-mustache 语法不能作用在 HTML 特性上，遇到这种情况应该使用 [v-bind 指令](../api/#v-bind)：
+mustache 语法不能作用在 HTML 标签属性上，遇到这种情况应该使用 [v-bind 指令](../api/#v-bind)：
 
 ``` html
 <div v-bind:id="dynamicId"></div>
 ```
 
-这同样适用于布尔类特性，如果求值结果是 falsy 的值，则该特性将会被删除：
+这同样适用于布尔类特性，如果求值结果是 false 的值，则该特性将会被删除：
 
 ``` html
 <button v-bind:disabled="isButtonDisabled">Button</button>
